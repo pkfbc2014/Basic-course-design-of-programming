@@ -1,0 +1,22 @@
+﻿  源.cpp
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(383,7): warning C4101: “ch”: 未引用的局部变量
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(442,6): warning C4101: “ii”: 未引用的局部变量
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(439,7): warning C4101: “ch”: 未引用的局部变量
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(472,6): warning C4101: “ii”: 未引用的局部变量
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(469,7): warning C4101: “ch”: 未引用的局部变量
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(505,6): warning C4101: “ii”: 未引用的局部变量
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(683,6): warning C4101: “ii”: 未引用的局部变量
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(859,6): warning C4101: “ii”: 未引用的局部变量
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1191,13): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1191,13): message : 占位符和其参数预计 4 可变参数，但提供的却是 3 参数
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1191,13): message : 缺失的可变参数 4 为格式字符串“%d”所需
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1192,13): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1192,13): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1192,13): message : 缺失的可变参数 1 为格式字符串“%d”所需
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1201,12): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1214,13): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(1247,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(195): warning C4715: “judgeu”: 不是所有的控件路径都返回值
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(249): warning C4715: “ChangeDate”: 不是所有的控件路径都返回值
+C:\Users\Administrator\Desktop\程序设计基础课程设计\源.cpp(257): warning C4715: “CheckWeek”: 不是所有的控件路径都返回值
+  程序设计基础课程设计.vcxproj -> C:\Users\Administrator\Desktop\程序设计基础课程设计\Debug\程序设计基础课程设计.exe

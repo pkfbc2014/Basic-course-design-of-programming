@@ -1,0 +1,61 @@
+﻿struct Patient{//患者信息
+    char name[30];
+    int age;
+    int Register;//挂号,数值不超过500
+    int i;//已有挂号的个数
+};
+struct Doctor{//医生信息
+    char name[30];
+    int level[30];//级别
+    char department[30];//科室
+    int worknumber;//工号
+    int worktime[7];//出诊时间
+};
+struct Situation{//诊疗情况
+    int check[30];//检查种类
+    float checksum;//检查总价
+    
+    int drugnumber[30];//药品数量，对应药品编号
+    int drug[30];//药品种类，最多三十种
+    int drugnumber[30];//<=100
+    float drugsum;
+
+    char intime[30];//住院开始日期
+    char outtime[30];//预计出院日期
+    int deposit;//押金
+};
+struct Record  //诊疗记录
+{
+    struct Record * next;
+    struct Patient patient;
+    struct Doctor doctor;
+    struct Situation situation;
+    struct Record** Doctorptr;
+//诊疗记录对应医生检索链表节点中的诊疗记录指针数组的元素地址,
+//为了【删除】诊疗记录时，对应检索链表的指针能置空；指针使用前要判断是否非空
+    struct Record** Departmentptr;
+    struct Record** Patientptr;
+};
+
+
+struct PatientIndex{//患者检索链表节点
+    int number;//number<=100,患者数量
+    int times;//今日挂号的数量，每天清零,最多5个
+    int Register[5];//今日挂号，用于检测是否合边界条件
+    struct Patient patient;
+    struct Record* index[900];
+    struct PatientIndex* next;
+};
+struct DoctorIndex{//医生检索链表节点
+    int number;//<=30，医生数量
+    int times;//<=20，医生受理挂号的个数，每天清零
+    struct Doctor doctor;
+    struct Record* index[900];
+    struct DoctorIndex* next;
+};
+struct DepartmentIndex{//诊室检索链表节点
+    char name[30];
+    int signnumber;//用于检索工号的特征数字,如第一诊室的医生编号是01xx，特征数字为100，按大小区别
+    struct Record* index[900];
+    struct Department* next;
+};

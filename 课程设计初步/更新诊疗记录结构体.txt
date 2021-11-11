@@ -1,0 +1,12 @@
+struct Record  //诊疗记录
+{
+    struct Record * next;
+    struct Patient patient;
+    struct Doctor doctor;
+    struct Situation situation;
+    struct Record** Doctorptr;
+//诊疗记录对应医生检索链表节点中的诊疗记录指针数组的元素地址,
+//为了【删除】诊疗记录时，对应检索链表的指针能置空；指针使用前要判断是否非空
+    struct Record** Departmentptr;
+    struct Record** Patientptr;
+};

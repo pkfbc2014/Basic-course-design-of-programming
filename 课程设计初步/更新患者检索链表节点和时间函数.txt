@@ -1,0 +1,31 @@
+﻿struct PatientIndex //患者检索链表节点
+{
+    char name[30];
+    int number;//患者编号
+    int times1;//今日挂号的数量，每天清零,最多5个
+    int times2;//住院之后的扣费次数
+    int Register[5];//今日挂号，用于检测是否合边界条件
+    int intime;//住院开始日期,暂定只有四位，两位月，两位日
+    int deposit;//押金，初次缴纳不得少于住院天数*200
+    int outtime;//预计出院日期,更 改 为 int，
+    struct Patient patient;
+    struct Record* index[900];
+    struct PatientIndex* next;
+}
+int gettime()//时间获得函数，此时间为题目要求的只有月日时分,配合之前发的代码中的时间实现部分使用
+    {
+
+        int year=1900+p->tm_year;
+        int month=1+p->tm_mon;
+        int day=p->tm_mday;
+        int hour=p->tm_hour;
+        int minute=p->tm_min;
+        int second=p->tm_sec;
+        int time=month*1000000+day*10000+hour*100+minute;
+        return time;
+
+    }
+        time_t t;//将t声明为时间变量
+        struct tm *p;//struct tm是一个结构体，声明一个结构体指针
+        time(&t);
+        p=localtime(&t);//获得当地的时间
